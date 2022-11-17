@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2BD7762926869F00BD625C /* HelloWorldModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BD7752926869F00BD625C /* HelloWorldModule.swift */; };
+		9F2BD786292691D600BD625C /* RCTHelloWorldModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BD785292691D600BD625C /* RCTHelloWorldModule.m */; };
 		9FCE20DC29256A0100172739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE20DB29256A0100172739 /* AppDelegate.swift */; };
 		9FCE20DE29256A0100172739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE20DD29256A0100172739 /* SceneDelegate.swift */; };
 		9FCE20E029256A0100172739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE20DF29256A0100172739 /* ViewController.swift */; };
@@ -18,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		11350DE44D7A1F074673BEA4 /* Pods_MyNativeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNativeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2BD7752926869F00BD625C /* HelloWorldModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldModule.swift; sourceTree = "<group>"; };
+		9F2BD784292691D500BD625C /* MyNativeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyNativeApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F2BD785292691D600BD625C /* RCTHelloWorldModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTHelloWorldModule.m; sourceTree = "<group>"; };
 		9FCE20D829256A0100172739 /* MyNativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE20DB29256A0100172739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCE20DD29256A0100172739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +92,9 @@
 				9FCE20E429256A0300172739 /* Assets.xcassets */,
 				9FCE20E629256A0300172739 /* LaunchScreen.storyboard */,
 				9FCE20E929256A0300172739 /* Info.plist */,
+				9F2BD7752926869F00BD625C /* HelloWorldModule.swift */,
+				9F2BD785292691D600BD625C /* RCTHelloWorldModule.m */,
+				9F2BD784292691D500BD625C /* MyNativeApp-Bridging-Header.h */,
 			);
 			path = MyNativeApp;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 				TargetAttributes = {
 					9FCE20D729256A0100172739 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -206,9 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2BD786292691D600BD625C /* RCTHelloWorldModule.m in Sources */,
 				9FCE20E029256A0100172739 /* ViewController.swift in Sources */,
 				9FCE20DC29256A0100172739 /* AppDelegate.swift in Sources */,
 				9FCE20DE29256A0100172739 /* SceneDelegate.swift in Sources */,
+				9F2BD7762926869F00BD625C /* HelloWorldModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -371,6 +383,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poc-green-panda.MyNativeApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyNativeApp/MyNativeApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -399,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.poc-green-panda.MyNativeApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyNativeApp/MyNativeApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
